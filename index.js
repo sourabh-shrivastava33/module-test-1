@@ -65,7 +65,7 @@ nextButton.addEventListener("click", () => {
 lastPagePlyAgain.addEventListener("click", continuePlay);
 
 refreshScore.addEventListener("click", () => {
-	localStorage.clear("scores");
+	localStorage.removeItem("scores");
 	window.location.reload();
 });
 
@@ -211,5 +211,3 @@ function showResult() {
 	const playAgainBtn = document.querySelector(".announce button");
 	playAgainBtn.addEventListener("click", continuePlay);
 }
-
-// move to the last page
