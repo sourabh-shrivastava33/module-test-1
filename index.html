@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rock-Paper-Scissor</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="container first-page">
+			<section class="score-board">
+				<div class="game-name">
+					<span>Rock</span><span>Paper</span><span>Scissor</span>
+				</div>
+				<div class="score-box">
+					<div class="computer-score">
+						<p><span>Computer</span> <span>score</span></p>
+						<span class="score"></span>
+					</div>
+					<div class="your-score">
+						<p><span>Your</span><span>score</span></p>
+						<span class="score"></span>
+					</div>
+				</div>
+				<button class="refresh">refresh</button>
+
+				<!-- <button>hello</button> -->
+			</section>
+			<section class="play-buttons">
+				<div class="button-container">
+					<div class="image-container paper img-container-1" id="paper">
+						<img src="assests/paper.svg" class="circle" />
+						<img src="assests/paper.png" class="hand-icon" />
+					</div>
+					<div class="image-container rock img-container-2" id="rock">
+						<img src="assests/rock.svg" class="circle" />
+						<img src="assests/rock.png" class="hand-icon" />
+					</div>
+					<div class="image-container scissors img-container-3" id="scissor">
+						<img src="assests/scissor.svg" class="circle" />
+						<img src="assests/scissor.png" class="hand-icon" />
+					</div>
+				</div>
+			</section>
+			<section class="result-container hide"></section>
+		</div>
+
+		<div class="container last-page hide">
+			<div class="decorators">
+				<img
+					src="assests/final-page/Star 1.svg"
+					alt="star"
+					class="star star-1"
+				/><img
+					src="assests/final-page/Vector.png"
+					alt="star"
+					class="trophy"
+				/><img
+					src="assests/final-page/Star 2.svg"
+					alt="star"
+					class="star star-2"
+				/><img
+					src="assests/final-page/Star 3.svg"
+					alt="star"
+					class="star star-3"
+				/><img
+					src="assests/final-page/Star 4.svg"
+					alt="star"
+					class="star star-4"
+				/><img
+					src="assests/final-page/Star 5.svg"
+					alt="star"
+					class="star star-5"
+				/><img
+					src="assests/final-page/Star 6.svg"
+					alt="star"
+					class="star star-6"
+				/><img
+					src="assests/final-page/Star 7.svg"
+					alt="star"
+					class="star star-7"
+				/><img
+					src="assests/final-page/Star 9.svg"
+					alt="star"
+					class="star star-9"
+				/>
+			</div>
+			<div class="final-announcement">
+				<h1>HURRAY!!</h1>
+				<p>You won the game</p>
+			</div>
+			<div class="ply-agn-btn-container">
+				<button class="last-page-play-btn">Play again</button>
+			</div>
+		</div>
+		<div class="rules-container hide">
+			<div class="close">
+				<img src="assests/Ellipse 6.svg" alt="circle to hold cross" />
+				<span class="cross">X</span>
+			</div>
+			<div class="rules-box">
+				<h3>Game rules</h3>
+				<ul>
+					<li>
+						Rock beats scissors, scissors beat paper, and paper beats rock.
+					</li>
+					<li>
+						Agree ahead of time whether you’ll count off “rock, paper, scissors,
+						shoot” or just “rock, paper, scissors.
+					</li>
+					<li>
+						Use rock, paper, scissors to settle minor decisions or simply play
+						to pass the time
+					</li>
+					<li>
+						If both players lay down the same hand, each player lays down
+						another hand
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="rules-button">
+			<button class="rules">Rules</button>
+			<button class="next hide">Next</button>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>
